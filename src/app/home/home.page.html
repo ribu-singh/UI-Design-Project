@@ -1,148 +1,90 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-row class="top">
-      <ion-row>
-        <ion-button class="button1">
-          <ion-icon name="settings-sharp"></ion-icon>
-        </ion-button>
-      </ion-row>
-      <ion-row class="header1">
-        Dribble
-      </ion-row>
-      <ion-row class="signin">
-        Sign in
-      </ion-row>
+<ion-content class="user-div">
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col class="user-image">
+        <ion-icon name="person-circle-sharp" class="icon1"></ion-icon>
+      </ion-col>
+      <ion-col class="cart">
+        <ion-icon name="cart" class="icon2"></ion-icon>
+        <div class="count">2</div>
+      </ion-col>
     </ion-row>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="content" [fullscreen]="true">
-  <ion-col>
-    <ion-col>
-      <h1 class="top1">eCommerce Store App Design</h1>
-    </ion-col>
-    <ion-col>
-      <ion-col class="imagecol">
-        <img class="image1" src="../../assets/icon/944b08efb66577ba400d5838490ea5b9.webp">
-        <ion-row class="imagerow">
-          <ion-col>
-            Purrweb UI
-          </ion-col>
-          <ion-col>
-            Follow • Hire Us
-          </ion-col>
-        </ion-row>
+    <ion-row>
+      <ion-col class="box" *ngFor="let data of headerData">
+        {{data}}
       </ion-col>
-
-    </ion-col>
-
-  </ion-col>
-  <ion-col class="button">
-    <ion-row class="button2">
-      <ion-row>
-        <ion-button>
-          <ion-icon name="folder-sharp"></ion-icon>
-        </ion-button>
-        <ion-button>
-          <ion-icon name="heart-sharp"></ion-icon>
-        </ion-button>
-      </ion-row>
-      <ion-row>
-        <ion-button>
-          <ion-icon name="share-social-sharp"></ion-icon>
-        </ion-button>
-        <ion-button>
-          <ion-icon name="chatbox-ellipses-sharp"></ion-icon>
-          <ion-row class="count">17</ion-row>
-        </ion-button>
-
-      </ion-row>
     </ion-row>
-  </ion-col>
-  <ion-segment class="media-segment">
-    <ion-col class="media-galery">
-      <ion-col class="image-container">
-        <ion-col class="media1">
-          <ion-col class="media2">
-            <ion-col class="video">
-              <ion-col class="video1">
-                <ion-col class="video2">
-                  <ion-col class="video3">
-                    <ion-col class="video4">
-                      <video id="video_player" style="background-size: cover; height: 195px;" controls="off"
-                        #videoPlayer>
-                        <source src="../../assets/Videos/200413_01_Cine_06.mp4" type="video/mp4" />
-                        Browser not supported
-                      </video>
-                    </ion-col>
-                  </ion-col>
-                </ion-col>
+    <ion-row>
+      <ion-slides loop="true" slidesPerView="2">
+        <ion-slide *ngFor="let drs of dress">
+          <ion-card class="card1" routerLink="/product">
+            <!-- <img [src]="drs.image" /> -->
+            <img class="image3" [ngStyle]="{'background-image': 'url(' + drs.image + ')'}" />
+
+            <ion-row>
+              <ion-col>
+                <p><b>{{drs.name}}</b></p>
               </ion-col>
-              <ion-col class="video1">
-                <ion-col class="video2">
-                  <ion-col class="video3">
-                    <ion-col class="video4">
-                      <video id="video_player" style="background-size: cover; height: 195px;" controls="off"
-                        #videoPlayer>
-                        <source src="../../assets/Videos/_Halloween33_preview.mp4" type="video/mp4" />
-                        Browser not supported
-                      </video>
-                    </ion-col>
-                  </ion-col>
-                </ion-col>
+              <ion-col>
+                <h4>{{drs.price}}</h4>
               </ion-col>
-            </ion-col>
-          </ion-col>
-        </ion-col>
-      </ion-col>
-    </ion-col>
-  </ion-segment>
-  <ion-col class="paragraph">
-    <ion-col>
-      <p class="para">
-        The team is available for new projects! Drop us a line
-        <a href="">hello@purrweb.com</a> |
-        <a href="">WhatsApp</a>
-      </p>
-      <p class="para">
-        How’s it going, friends? We’re happy to share with you the design we made for an online women’s clothing store!✌
-      </p>
-      <p class="para">
-        👗On the shot you can see two screens. The first one shows product categories and recommendations. There’s also
-        a user’s profile and the shopping cart. The second one is a product page with information about the price,
-        available sizes and colors.
-      </p>
-      <p class="para">
-        🎀We used a lean color palette because it helps users focus on products. The accent color is light pink — it’s
-        associated with accuracy and femininity.
-      </p>
-      <p class="para">
-        📱It’s easy to navigate within the app because there’s a minimum amount of elements.
-      </p>
-      <p class="para">
-        Created by Ribu Singh
-      </p>
-      <p class="para">
-        Press L if you like our design and share feedback!
-      </p>
-    </ion-col>
-  </ion-col>
-  <ion-col class="box">
-    <a href="">
-      <img src="../../assets/icon/dribbble_1_2x.webp" class="box-image">
-    </a>
-    <ion-col class="box-item">
-      <ion-col>
-        Rebound of
-      </ion-col>
-      <ion-col class="box-item2">
-        <a href="">Clother mobile KIT for download</a>
-      </ion-col>
-      <ion-col>
-        By: <a class="url" href="">
-          Ribu Singh
-        </a>
-      </ion-col>
-    </ion-col>
-  </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+
+
+    <ion-row>
+      <p class="para"><b>Recommended For You</b></p>
+    </ion-row>
+    <ion-row>
+      <ion-slides slidesPerView="2">
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3"  src="../../assets/dresses/coats/download4.jpg" />
+              
+            </ion-card>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/download1.jpg" />
+              
+            </ion-card>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/download2.jpg" />
+              
+            </ion-card>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/images.jpg" />
+          
+            </ion-card>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/download.jpg" />
+              
+            </ion-card>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
 </ion-content>
