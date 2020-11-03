@@ -5,6 +5,7 @@ import { ProductComponent} from './product/product.component';
 
 const routes: Routes = [
   { path: 'product', component: ProductComponent },
+  { path: 'home', component: HomePage },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)

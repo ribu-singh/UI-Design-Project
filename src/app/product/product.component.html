@@ -1,16 +1,67 @@
 <ion-content>
   <ion-grid>
+    <ion-row class="header">
+      <ion-col class="user-image">
+        <ion-icon name="chevron-back" routerLink="/home"></ion-icon>
+      </ion-col>
+      <ion-col class="cart">
+        <ion-icon name="cart" class="icon2"></ion-icon>
+        <div class="count">2</div>
+      </ion-col>
+    </ion-row>
     <ion-row>
-      <ion-slides slidesPerView="2">
+      <ion-slides>
         <ion-slide>
           <div class="slide">
             <ion-card class="card">
-              <img class="image3" src="../../assets/dresses/coats/download4.jpg" />
-
+              <img class="image3" src="../../assets/dresses/coats/images3.jpg" />
+            </ion-card>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/images4.jpg" />
+            </ion-card>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <ion-card class="card">
+              <img class="image3" src="../../assets/dresses/coats/images5.jpg" />
             </ion-card>
           </div>
         </ion-slide>
       </ion-slides>
+    </ion-row>
+    <ion-row>
+      <ion-card class="card1">
+        <ion-row class="row1">
+          <ion-col>
+            <div class="price">
+              <h2>Winter Coat</h2>
+            </div>
+            <div class="price">
+              $ 45
+            </div>
+            <div class="price">
+              <b>Your Size</b>
+            </div>
+            <div class="size">
+              <span class="count1">S</span><span style="background: pink;" class="count1">M</span><span
+                class="count1">L</span><span class="count1">XL</span>
+            </div>
+          </ion-col>
+          <ion-col class="colors1" >
+            <div class="colors">
+              <span style="background: gray;" class="count2"></span>
+              <span style="background:pink" class="count2"></span>
+              <span style="background:brown;" class="count2"></span>
+              <span style="background: yellow;" class="count2"></span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
     </ion-row>
   </ion-grid>
 </ion-content>
