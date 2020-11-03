@@ -14,7 +14,7 @@ export class HomePage {
   }
 
   ionViewWillEnter() {
-    this.headerData = ['Coats', 'Dresses', 'Jersey', 'Pants'];
+    this.headerData = ['Dresses', 'Jersey', 'Pants'];
     this.dress = [{ image: '../assets/dresses/coats/download1.jpg', name: 'Winter Coat', price: '$12' },
     { image: '../assets/dresses/coats/download2.jpg', name: 'Woolen Coat', price: '$20' },
     { image: '../assets/dresses/coats/images.jpg', name: 'Long Coat', price: '$45' },

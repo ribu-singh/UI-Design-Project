@@ -1,5 +1,5 @@
 <ion-content class="user-div">
-  <ion-grid>
+  <ion-grid class="body">
     <ion-row class="header">
       <ion-col class="user-image">
         <ion-icon name="person-circle-sharp" class="icon1"></ion-icon>
@@ -10,6 +10,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
+      <ion-col class="box1">Coats</ion-col>
       <ion-col class="box" *ngFor="let data of headerData">
         {{data}}
       </ion-col>
@@ -23,10 +24,10 @@
 
             <ion-row>
               <ion-col>
-                <p><b>{{drs.name}}</b></p>
+                <p class="text"><b>{{drs.name}}</b></p>
               </ion-col>
               <ion-col>
-                <h4>{{drs.price}}</h4>
+                <h4 class="text1">{{drs.price}}</h4>
               </ion-col>
             </ion-row>
           </ion-card>
@@ -43,7 +44,7 @@
         <ion-slide>
           <div class="slide">
             <ion-card class="card" routerLink="/product">
-              <img class="image3"  src="../../assets/dresses/coats/download4.jpg" />
+              <img class="image3" src="../../assets/dresses/coats/download4.jpg" />
               <div class="count1">10% OFF</div>
             </ion-card>
           </div>
@@ -53,7 +54,7 @@
           <div class="slide">
             <ion-card class="card" routerLink="/product">
               <img class="image3" src="../../assets/dresses/coats/download1.jpg" />
-              
+
             </ion-card>
           </div>
         </ion-slide>
@@ -71,7 +72,7 @@
           <div class="slide">
             <ion-card class="card" routerLink="/product">
               <img class="image3" src="../../assets/dresses/coats/images.jpg" />
-          
+
             </ion-card>
           </div>
         </ion-slide>
@@ -80,11 +81,16 @@
           <div class="slide">
             <ion-card class="card" routerLink="/product">
               <img class="image3" src="../../assets/dresses/coats/download.jpg" />
-              
+
             </ion-card>
           </div>
         </ion-slide>
       </ion-slides>
+    </ion-row>
+    <ion-row>
+      <div class="count2">
+        <ion-icon name="search"></ion-icon>
+      </div>
     </ion-row>
   </ion-grid>
 </ion-content>
