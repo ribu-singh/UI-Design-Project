@@ -1,29 +1,41 @@
 .header {
   margin: 7% 0 4% 2%;
 }
+.icon1 {
+  zoom: 2;
+}
 .icon2 {
   float: right;
   margin-right: 9%;
+  zoom: 1.5;
 }
 .box {
-  padding: 12px 12px;
-  border: 1px solid #dbdbde;
-  border-radius: 33%;
-  margin: 10px;
+  border-radius: 33px;
+  margin: 5px;
   text-align: center;
+  width: 78px;
+  background: white;
+  height: 42px;
   color: #0d0c22;
-  font-size: 12px;
+  outline: none;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 8px;
 }
 .card {
   width: 17em;
   height: 25em;
 }
 .card1 {
-  width: 65%;
-  height: 88%;
+  width: 70%;
+  height: 85%;
   box-shadow: none;
+}
+.card2 {
+  width: 100%;
+  height: 82%;
+  box-shadow: none;
+  border-radius: 15px;
 }
 .count {
   display: block;
@@ -47,7 +59,7 @@
 }
 .image3 {
   width: 100%;
-  height: 25em;
+  height: 16em;
   background-position: center center;
   background: cover;
   background-repeat: no-repeat;
@@ -55,28 +67,29 @@
   border-bottom: none;
 }
 .para {
-  margin-left: 16%;
+  margin-left: 5%;
 }
 .text {
   // padding-top: 2%;
   font-size: 15px;
+  width: 100px;
 }
 .text1 {
-  margin-top: 10%;
+  margin-top: 18%;
   text-align: right;
 }
 .count1 {
   display: block;
   position: absolute;
   top: 6px;
-  right: 4px;
+  right: 80px;
   padding: 0 4px;
   min-width: 20px;
   text-align: center;
   border: 1px solid #e7e7e9;
   background: brown;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
-  border-radius: 9%;
+  border-radius: 6px;
   z-index: 1;
   font-size: 11px;
   line-height: 18px;
@@ -86,33 +99,71 @@
 .count2 {
   display: block;
   position: absolute;
-  bottom: -25%;
-  right: 46%;
-  padding: 2px 10px 0 10px;
-  min-width: 20px;
+  bottom: 2.5%;
+  right: 39%;
+  padding: 7px 20px 6px 20px;
+  min-width: 39px;
+  outline: none;
   text-align: center;
   border: 1px solid #e7e7e9;
   background: black;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
-  border-radius: 23%;
+  border-radius: 33px;
   z-index: 1;
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 26px;
   color: white;
   box-sizing: border-box;
 }
 // .body{
 //   background: whitesmoke;
 // }
-.box1{
-  padding: 12px 12px;
-  border: 1px solid #dbdbde;
-  border-radius: 33%;
-  margin: 10px;
+.box1 {
+  border-radius: 33px;
+  margin: 5px;
   text-align: center;
+  width: 78px;
+  height: 42px;
   color: #0d0c22;
-  font-size: 12px;
-  background: pink;
+  outline: none;
+  font-size: 13px;
+  background: peachpuff;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 8px;
+}
+.box:focus {
+  background: peachpuff;
+}
+// .image-slider {
+//   margin-left: -149px !important;
+// }
+// .imageslide {
+//   width: 108px !important;
+//   margin-left: 10px !important;
+// }
+// .hotelSmallImg {
+//   margin-top: 12px;
+//   background-size: cover;
+//   background-position: center center;
+//   width: 100%;
+//   height: 90px;
+// }
+
+.dress-slide {
+  // margin-right: -95px;
+  width: 250px !important;
+  margin: 0 -25px -30px -25px !important;
+}
+.dress-slide1 {
+  width: 175px !important;
+  margin: 0 -10px 0px -10px !important;
+}
+.image4 {
+  width: 100%;
+  height: 19em;
+  border-radius: 15px;
+  background-position: center center;
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: none;
 }

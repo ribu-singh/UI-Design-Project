@@ -10,30 +10,43 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col class="box1">Coats</ion-col>
-      <ion-col class="box" *ngFor="let data of headerData">
+      <button class="box1">Coats</button>
+      <button class="box" *ngFor="let data of headerData">
         {{data}}
-      </ion-col>
+      </button>
     </ion-row>
-    <ion-row>
-      <ion-slides loop="true" slidesPerView="2">
-        <ion-slide *ngFor="let drs of dress">
-          <ion-card class="card1" routerLink="/product">
-            <!-- <img [src]="drs.image" /> -->
-            <img class="image3" [ngStyle]="{'background-image': 'url(' + drs.image + ')'}" />
 
-            <ion-row>
-              <ion-col>
-                <p class="text"><b>{{drs.name}}</b></p>
-              </ion-col>
-              <ion-col>
-                <h4 class="text1">{{drs.price}}</h4>
-              </ion-col>
-            </ion-row>
-          </ion-card>
-        </ion-slide>
-      </ion-slides>
-    </ion-row>
+    <ion-slides>
+      <ion-slide *ngFor="let drs of dress" class="dress-slide">
+        <ion-card class="card1" routerLink="/product">
+
+          <img class="image4" [ngStyle]="{'background-image': 'url(' + drs.image + ')'}" />
+
+          <ion-row>
+            <ion-col>
+              <p class="text"><b>{{drs.name}}</b></p>
+            </ion-col>
+            <ion-col>
+              <h4 class="text1">{{drs.price}}</h4>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    <!-- <ion-slides class="image-slider" loop="true"  slidesPerView="2" [options]="slideOpts">
+      <ion-slide *ngFor="let drs of dress" class="imageslide">
+        <img [ngStyle]="{'background-image': 'url(' + drs.image + ')'}" class="hotelSmallImg"  />
+        <ion-row>
+          <ion-col>
+            <p class="text"><b>{{drs.name}}</b></p>
+          </ion-col>
+          <ion-col>
+            <h4 class="text1">{{drs.price}}</h4>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+    </ion-slides> -->
+
 
 
     <ion-row>
@@ -41,56 +54,43 @@
     </ion-row>
     <ion-row>
       <ion-slides slidesPerView="2">
-        <ion-slide>
-          <div class="slide">
-            <ion-card class="card" routerLink="/product">
-              <img class="image3" src="../../assets/dresses/coats/download4.jpg" />
-              <div class="count1">10% OFF</div>
-            </ion-card>
-          </div>
+        <ion-slide class="dress-slide1">
+          <ion-card class="card2" routerLink="/product">
+            <img class="image3" src="../../assets/dresses/coats/download4.jpg" />
+            <div class="count1">10% OFF</div>
+          </ion-card>
         </ion-slide>
 
-        <ion-slide>
-          <div class="slide">
-            <ion-card class="card" routerLink="/product">
-              <img class="image3" src="../../assets/dresses/coats/download1.jpg" />
-
-            </ion-card>
-          </div>
+        <ion-slide class="dress-slide1">
+          <ion-card class="card2" routerLink="/product">
+            <img class="image3" src="../../assets/dresses/coats/download1.jpg" />
+          </ion-card>
         </ion-slide>
 
-        <ion-slide>
-          <div class="slide">
-            <ion-card class="card" routerLink="/product">
-              <img class="image3" src="../../assets/dresses/coats/download2.jpg" />
-              <div class="count1">15% OFF</div>
-            </ion-card>
-          </div>
+        <ion-slide class="dress-slide1">
+          <ion-card class="card2" routerLink="/product">
+            <img class="image3" src="../../assets/dresses/coats/download2.jpg" />
+            <div class="count1">15% OFF</div>
+          </ion-card>
         </ion-slide>
 
-        <ion-slide>
-          <div class="slide">
-            <ion-card class="card" routerLink="/product">
-              <img class="image3" src="../../assets/dresses/coats/images.jpg" />
-
-            </ion-card>
-          </div>
+        <ion-slide class="dress-slide1">
+          <ion-card class="card2" routerLink="/product">
+            <img class="image3" src="../../assets/dresses/coats/images.jpg" />
+          </ion-card>
         </ion-slide>
 
-        <ion-slide>
-          <div class="slide">
-            <ion-card class="card" routerLink="/product">
-              <img class="image3" src="../../assets/dresses/coats/download.jpg" />
-
-            </ion-card>
-          </div>
+        <ion-slide class="dress-slide1">
+          <ion-card class="card2" routerLink="/product">
+            <img class="image3" src="../../assets/dresses/coats/download.jpg" />
+          </ion-card>
         </ion-slide>
       </ion-slides>
     </ion-row>
     <ion-row>
-      <div class="count2">
+      <button class="count2">
         <ion-icon name="search"></ion-icon>
-      </div>
+      </button>
     </ion-row>
   </ion-grid>
 </ion-content>

@@ -12,6 +12,9 @@ export class HomePage {
   constructor() {
 
   }
+  slideOpts = {
+    zoom: false
+  };
 
   ionViewWillEnter() {
     this.headerData = ['Dresses', 'Jersey', 'Pants'];
@@ -23,9 +26,7 @@ export class HomePage {
     ];
   }
 
-  // slideOpts = {
-  //   zoom: false
-  // };
+
 
   // cardClick(){
   //   this.route.navigate(['/product'])

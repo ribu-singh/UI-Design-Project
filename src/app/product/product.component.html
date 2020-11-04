@@ -2,10 +2,10 @@
   <ion-grid>
     <ion-row class="header">
       <ion-col class="user-image">
-        <ion-icon name="chevron-back" routerLink="/home"></ion-icon>
+        <ion-icon class="icon" name="chevron-back" (click)=back()></ion-icon>
       </ion-col>
       <ion-col class="cart">
-        <ion-icon name="cart" class="icon2"></ion-icon>
+        <ion-icon name="cart" class="icon"></ion-icon>
         <div class="count">2</div>
       </ion-col>
     </ion-row>
@@ -48,16 +48,16 @@
               <b>Your Size</b>
             </div>
             <div class="size">
-              <span class="count1">S</span><span style="background: pink;" class="count1">M</span><span
-                class="count1">L</span><span class="count1">XL</span>
+              <button class="count1">S</button><button style="background: pink;" class="count1">M</button><button
+                class="count1">L</button><button class="count1">XL</button>
             </div>
           </ion-col>
-          <ion-col class="colors1" >
+          <ion-col class="colors1">
             <div class="colors">
-              <span style="background: gray;" class="count2"></span>
-              <span style="background:pink" class="count2"></span>
-              <span style="background:brown;" class="count2"></span>
-              <span style="background: yellow;" class="count2"></span>
+              <button style="background: gray;" class="count2"></button>
+              <button style="background:pink" class="count2"></button>
+              <button style="background:brown;" class="count2"></button>
+              <button style="background: yellow;" class="count2"></button>
             </div>
           </ion-col>
         </ion-row>

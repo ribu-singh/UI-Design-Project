@@ -17,15 +17,15 @@
 .count {
     display: block;
     position: absolute;
-    top: -8px;
-    right: 45px;
+    top: -6px;
+    right: 38px;
     padding: 0 4px;
     min-width: 20px;
     text-align: center;
     border: 1px solid #e7e7e9;
     background: pink;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
-    border-radius: 50%;
+    border-radius: 35px;
     z-index: 1;
     font-size: 11px;
     line-height: 18px;
@@ -40,6 +40,9 @@
 }
 .cart {
     margin-left: 58%;
+}
+.icon {
+    zoom: 1.5;
 }
 .count1 {
     display: block;
@@ -80,19 +83,20 @@
     display: grid;
     margin-left: 72%;
 }
-.colors1{
+.colors1 {
     display: grid;
 }
 .count2 {
     display: block;
     position: relative;
-    width: -1%;
     margin: 6.7%;
     width: 30px;
     border: 1px solid #e7e7e9;
-    background: white;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 91%;
+    border-radius: 35px;
     z-index: 1;
     color: #6e6d7a;
+}
+.count2:focus {
+    border-radius: 30px;
 }
