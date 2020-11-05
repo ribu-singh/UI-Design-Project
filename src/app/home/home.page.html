@@ -19,9 +19,7 @@
     <ion-slides>
       <ion-slide *ngFor="let drs of dress" class="dress-slide">
         <ion-card class="card1" routerLink="/product">
-
           <img class="image4" [ngStyle]="{'background-image': 'url(' + drs.image + ')'}" />
-
           <ion-row>
             <ion-col>
               <p class="text"><b>{{drs.name}}</b></p>
@@ -49,7 +47,7 @@
 
 
 
-    <ion-row>
+    <ion-row class="col-1">
       <p class="para"><b>Recommended For You</b></p>
     </ion-row>
     <ion-row>

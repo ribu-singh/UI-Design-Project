@@ -29,10 +29,12 @@
 .card1 {
   width: 70%;
   height: 85%;
+  outline: none;
   box-shadow: none;
 }
 .card2 {
   width: 100%;
+  outline: none;
   height: 82%;
   box-shadow: none;
   border-radius: 15px;
@@ -97,12 +99,11 @@
   box-sizing: border-box;
 }
 .count2 {
-  display: block;
-  position: absolute;
-  bottom: 2.5%;
-  right: 39%;
+  position: relative;
+  left: 43%;
   padding: 7px 20px 6px 20px;
   min-width: 39px;
+  margin-top: -44px;
   outline: none;
   text-align: center;
   border: 1px solid #e7e7e9;
@@ -152,6 +153,9 @@
   // margin-right: -95px;
   width: 250px !important;
   margin: 0 -25px -30px -25px !important;
+}
+.col-1 {
+  margin-bottom: -10px;
 }
 .dress-slide1 {
   width: 175px !important;
